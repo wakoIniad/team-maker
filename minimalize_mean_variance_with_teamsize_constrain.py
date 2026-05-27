@@ -17,22 +17,8 @@ M, N = MEMBER_COUNT, TEAM_COUNT
 
 #SAMPLE
 input_data = {
-    "NAME1": { "param1" : math.ceil(random.randint(1,16)**0.5), "param2": math.ceil(random.randint(1,16)**0.5) },
-    "NAME2": { "param1" : math.ceil(random.randint(1,16)**0.5), "param2": math.ceil(random.randint(1,16)**0.5) },
-    "NAME3": { "param1" : math.ceil(random.randint(1,16)**0.5), "param2": math.ceil(random.randint(1,16)**0.5) },
-    "NAME4": { "param1" : math.ceil(random.randint(1,16)**0.5), "param2": math.ceil(random.randint(1,16)**0.5) },
-    "NAME5": { "param1" : math.ceil(random.randint(1,16)**0.5), "param2": math.ceil(random.randint(1,16)**0.5) },
-    "NAME6": { "param1" : math.ceil(random.randint(1,16)**0.5), "param2": math.ceil(random.randint(1,16)**0.5) },
-    "NAME7": { "param1" : math.ceil(random.randint(1,16)**0.5), "param2": math.ceil(random.randint(1,16)**0.5) },
-    "NAME8": { "param1" : math.ceil(random.randint(1,16)**0.5), "param2": math.ceil(random.randint(1,16)**0.5) },
-    "NAME9": { "param1" : math.ceil(random.randint(1,16)**0.5), "param2": math.ceil(random.randint(1,16)**0.5) },
-    "NAME10":{ "param1" : math.ceil(random.randint(1,16)**0.5), "param2": math.ceil(random.randint(1,16)**0.5) },
-    "NAME11":{ "param1" : math.ceil(random.randint(1,16)**0.5), "param2": math.ceil(random.randint(1,16)**0.5) },
-    "NAME12":{ "param1" : math.ceil(random.randint(1,16)**0.5), "param2": math.ceil(random.randint(1,16)**0.5) },
-    "NAME13":{ "param1" : math.ceil(random.randint(1,16)**0.5), "param2": math.ceil(random.randint(1,16)**0.5) },
-    "NAME14":{ "param1" : math.ceil(random.randint(1,16)**0.5), "param2": math.ceil(random.randint(1,16)**0.5) },
-    "NAME15":{ "param1" : math.ceil(random.randint(1,16)**0.5), "param2": math.ceil(random.randint(1,16)**0.5) },
-    "NAME16":{ "param1" : math.ceil(random.randint(1,16)**0.5), "param2": math.ceil(random.randint(1,16)**0.5) }
+    f"NAME{n+1}": { "param1" : math.ceil(random.randint(1,16)**0.5), "param2": math.ceil(random.randint(1,16)**0.5) }\
+    for n in range(MEMBER_COUNT) 
 }
 
 ### ※input_dataのkeysに順序の保証があることを前提 ないならどうにかして ###
